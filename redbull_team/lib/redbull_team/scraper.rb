@@ -9,6 +9,7 @@ class Scraper
     self.get_players.collect do |players|
       player = Player.new
       player.name = players.css('div.player_info div.name a').children.first.text
+      player.position = players.css('div.player_info span.position').children.first.text
       #binding.pry
     end
   end
