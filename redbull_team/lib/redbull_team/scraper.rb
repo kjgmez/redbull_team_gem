@@ -12,6 +12,7 @@ class Scraper
       player.position = players.css('div.player_info span.position').children.first.text
       player.age = players.css('div.birthdate span.stat.age').text
       player.height = players.css('div.stats_container span.stat.height').text
+      player.weight = players.css('div.stats_container span.stat.weight').text
       #binding.pry
     end
   end
