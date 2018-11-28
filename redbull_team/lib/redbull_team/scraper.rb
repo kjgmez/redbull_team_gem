@@ -2,14 +2,9 @@ class Scraper
   def get_page_player
     doc = Nokogiri::HTML (open("https://www.newyorkredbulls.com/players"))
   end
+  def get_players
+    self.get_page_player.css('li.row')
   end
-# def print_players
-#   self.make_player
-#   Player.all.each  do |player|
-#     puts "name: #{player.name}"
-#     puts "position: #{player.position}"
-#   end
-# end
 end
 
-Scraper.new.make_player
+#Scraper.new.make_player
