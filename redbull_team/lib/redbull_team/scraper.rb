@@ -27,4 +27,4 @@ class Scraper
 #   end
 end
 
-Scraper.new.print_players
+#Scraper.new.make_player
