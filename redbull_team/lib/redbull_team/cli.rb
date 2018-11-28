@@ -16,4 +16,10 @@ class CLI
     Player.all.each_with_index{|player, i| puts "#{i+1}. #{player.name}"}
     #binding.pry
   end
+  def ask_for_input
+    puts "\nPlease select between 1 and #{Player.all.length}"
+    puts "To quit, type 'exit'."
+    @input = gets.downcase.strip
+    @input == 'exit' ? goodbye : check_for_input
+  end
 end
