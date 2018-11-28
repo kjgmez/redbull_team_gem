@@ -32,4 +32,8 @@ class CLI
       ask_for_input
     end
   end
+  def more_info
+    player = Player.all[@input.to_i - 1]
+    puts "Player info is as follows:\n Position: #{player.position}\n Age: #{player.age}\n Height: #{player.height}"
+  end
 end
