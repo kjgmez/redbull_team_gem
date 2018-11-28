@@ -22,6 +22,7 @@ def print_players
     puts "name: #{player.name}"
     puts "position: #{player.position}"
     puts "age: #{player.age}"
+    puts "height: #{player.height}"
   end
 end
 end
