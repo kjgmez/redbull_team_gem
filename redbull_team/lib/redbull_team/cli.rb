@@ -9,4 +9,7 @@ class CLI
       ask_for_input
     end
   end
+  def welcome
+    puts "Welcome to the Redbull Team line up!"
+  end
 end
