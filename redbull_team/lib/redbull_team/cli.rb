@@ -22,4 +22,8 @@ class CLI
     @input = gets.downcase.strip
     @input == 'exit' ? goodbye : check_for_input
   end
+  def goodbye
+    puts "Thanks for visiting the NYC Redbull Soccer team"
+    exit
+  end
 end
