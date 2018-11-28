@@ -26,4 +26,10 @@ class CLI
     puts "Thanks for visiting the NYC Redbull Soccer team"
     exit
   end
+  def check_for_input
+    until @input.match(/^(\d)+$/) && @input.to_i.between?(0, Player.all.length) && @input != 'exit'
+      puts "\nThe input you have typed is not a number within range"
+      ask_for_input
+    end
+  end
 end
