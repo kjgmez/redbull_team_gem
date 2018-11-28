@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In the terminal type `redbull_team` and the Interactive CLI should start
 
 ## Development
 
