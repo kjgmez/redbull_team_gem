@@ -23,8 +23,8 @@ def print_players
     puts "position: #{player.position}"
     puts "age: #{player.age}"
     puts "height: #{player.height}"
+    puts "weight: #{player.weight}"
   end
-end
 end
 
 Scraper.new.print_players
