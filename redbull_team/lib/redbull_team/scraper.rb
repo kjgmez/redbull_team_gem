@@ -21,6 +21,7 @@ def print_players
   Player.all.each  do |player|
     puts "name: #{player.name}"
     puts "position: #{player.position}"
+    puts "age: #{player.age}"
   end
 end
 end
