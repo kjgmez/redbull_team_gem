@@ -16,15 +16,15 @@ class Scraper
       #binding.pry
     end
   end
-def print_players
-  self.make_player
-  Player.all.each  do |player|
-    puts "name: #{player.name}"
-    puts "position: #{player.position}"
-    puts "age: #{player.age}"
-    puts "height: #{player.height}"
-    puts "weight: #{player.weight}"
-  end
+# def print_players
+#   self.make_player
+#   Player.all.each  do |player|
+#     puts "name: #{player.name}"
+#     puts "position: #{player.position}"
+#     puts "age: #{player.age}"
+#     puts "height: #{player.height}"
+#     puts "weight: #{player.weight}"
+#   end
 end
 
 Scraper.new.print_players
