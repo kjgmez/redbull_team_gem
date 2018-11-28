@@ -13,6 +13,7 @@ class CLI
     puts "Welcome to the Redbull Team line up!"
   end
   def list_name
+    Scraper.new.make_player
     Player.all.each_with_index{|player, i| puts "#{i+1}. #{player.name}"}
     #binding.pry
   end
