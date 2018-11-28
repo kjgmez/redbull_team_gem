@@ -16,13 +16,13 @@ class Scraper
       #binding.pry
     end
   end
-# def print_players
-#   self.make_player
-#   Player.all.each  do |player|
-#     puts "name: #{player.name}"
-#     puts "position: #{player.position}"
-#   end
-# end
+def print_players
+  self.make_player
+  Player.all.each  do |player|
+    puts "name: #{player.name}"
+    puts "position: #{player.position}"
+  end
+end
 end
 
-#Scraper.new.make_player
+Scraper.new.print_players
