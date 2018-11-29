@@ -1,7 +1,8 @@
 class Player
   attr_accessor :name, :position, :age, :height, :weight
   @@all = []
-  def initialize
+  def initialize(hash)
+    hash.each{|x,y| self.send(x,y)}
     self.class.all << self
   end
   def self.all

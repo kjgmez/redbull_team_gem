@@ -7,12 +7,13 @@ class Scraper
   end
   def make_player
     self.get_players.collect do |players|
-      player = Player.new
-      player.name = players.css('div.player_info div.name a').children.first.text
-      player.position = players.css('div.player_info span.position').children.first.text
-      player.age = players.css('div.birthdate span.stat.age').text
-      player.height = players.css('div.stats_container span.stat.height').text
-      player.weight = players.css('div.stats_container span.stat.weight').text
+      player = {}
+      player[:name] = players.css('div.player_info div.name a').children.first.text
+      player[:position] = players.css('div.player_info span.position').children.first.text
+      player[:age] = players.css('div.birthdate span.stat.age').text
+      player[:height] = players.css('div.stats_container span.stat.height').text
+      player[:weight] = players.css('div.stats_container span.stat.weight').text
+      Player.new(player)
       #binding.pry
     end
   end
