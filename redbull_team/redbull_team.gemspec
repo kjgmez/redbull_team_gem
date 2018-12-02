@@ -36,7 +36,7 @@ Gem::Specification.new do |spec|
   spec.executables   = ['redbull_team']
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "nokogiri", "~> 1.17"
+  spec.add_dependency "nokogiri"
 
   spec.add_development_dependency "bundler", "~> 1.17"
   spec.add_development_dependency "rake", "~> 10.0"

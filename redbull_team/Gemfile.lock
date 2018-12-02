@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     redbull_team (0.1.0)
-      nokogiri (~> 1.8)
+      nokogiri
 
 GEM
   remote: https://rubygems.org/
