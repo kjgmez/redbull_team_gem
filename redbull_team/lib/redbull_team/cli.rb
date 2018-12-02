@@ -10,8 +10,7 @@ class CLI
     end
   end
   def welcome
-    puts "Welcome to the Redbull Team line up!"
-    puts "Z DONT BELIEVE ME"
+    puts "Welcome to version 1 of the Redbull Team line up!"
   end
   def list_name
     Scraper.new.make_player
